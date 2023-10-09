@@ -29,9 +29,63 @@
             font-weight: normal;
             font-style: normal;
         }
-        .carousel-item img{
-            height: 425px;
+
+        .carousel-item img {
+            height: 450px;
             object-fit: fill;
+        }
+
+        .tab-content .tab-pane {
+            background-color: #083D77;
+            height: 300px;
+            width: 637px;
+            margin-right: 130px;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link {
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            font-size: 30px;
+            font-family: 'motter_corpus_stdcondensed', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            font-size: 30px;
+            font-family: 'motter_corpus_stdcondensed', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            padding-left: 40px;
+        }
+
+        @font-face {
+            font-family: 'motter_corpus_stdcondensed';
+            src: url('mottercorpusstd-condensed-webfont.woff2') format('woff2'),
+                url('mottercorpusstd-condensed-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .image-height {
+            max-height: 270px;
+        }
+
+        .custom-indicators li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin: 0 10px;
+            /* Adjust the value as needed */
         }
     </style>
 </head>
@@ -80,7 +134,7 @@
     </nav>
     <!--------------------------------------------------//navbar-section//------------------------------------>
 
-    <div class="container-fluid about-section d-flex flex-row p-3 mb-5 mt-3">
+    <!-- <div class="container-fluid about-section d-flex flex-row p-3 mb-5 mt-3">
         <div class="col-lg-6 p-3">
             <div class="ps-2">
                 <h1 class="about-heading">Heading defining PCCM</h1>
@@ -95,7 +149,50 @@
         <div class="col-lg-6 text-end about-img">
             <img src="images/2.jpg" alt="" width="486px" height="670px">
         </div>
+    </div> -->
+
+    <!-----------------------------------------//aboutus//----------------------------------------------->
+    <div class="container-fluid p-0 mb-3 mt-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/home/slider/slide-1.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/home/slider/slide-2.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/home/slider/slide-3.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/home/slider/slide-4.jpg" class="d-block w-100" alt="Slide 1">
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 about-section">
+                <div class="ps-2">
+                    <h1 class="about-heading">Heading defining PCCM</h1>
+                    <p class="text-white about-para">A well-known NGO Pune, India PCCM is a registered, public
+                        charitable trust founded by C.B. Koppiker, an internationally
+                        renowned Breast Onco-Surgeon.</p>
+                    <div class="btn btn-success mt-4 ps-4 pe-4 mb-3">DONATE</div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="container-fluid about-section2 d-flex flex-row  mt-5 ">
         <div class="col-lg-7 p-4 pe-0 pt-3">
             <div class="ps-2">
@@ -108,30 +205,6 @@
 
         </div>
     </div>
-    <!-----------------------------------------//aboutus//----------------------------------------------->
-    <div class="container-fluid p-0 mb-3 mt-3">
-        <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/slide-1.jpg" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/slide-2.jpg" class="d-block w-100" alt="Slide 2">
-                </div>
-
-            </div>
-            <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-  </div>
-
-
     <div class="container heading1 col-lg-6 ps-5 pe-5 mt-1 mb-4">
         <div class="before-line"></div>
         <h2>Our Work</h2>
@@ -142,7 +215,49 @@
         <div class="container work-section p-5 ps-0 pe-0 d-flex flex-row">
             <div class="col-lg-3 m-auto mb-0">
                 <div class="card m-auto mb-0">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <!--<img src="images/awareness-talks/awareness-talks-banner-prashanti-cancer-care-mission.png"
+                        class="card-img-top p-3 pb-0" alt="card-group-image">-->
+                    <div id="carouselWithIndicators1" class="carousel slide"
+                        class="card-img-top p-3 pb-0">
+                        <ol class="carousel-indicators custom-indicators">
+                            <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/awareness-talks/1.jpg" alt=""
+                                    class="d-block w-100 p-3 image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/awareness-talks/2.png" alt=""
+                                    class="d-block w-100 p-3 image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/awareness-talks/3.jpg" alt=""
+                                    class="d-block w-100 p-3 image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/awareness-talks/4.jpg" alt=""
+                                    class="d-block w-100 p-3 image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/awareness-talks/5.jpg" alt=""
+                                    class="d-block w-100 p-3 image-height">
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselWithIndicators1" role="button"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselWithIndicators1" role="button"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span></a>
+                        </div>
+                    </div>
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Awareness talks</h5>
 
@@ -151,7 +266,50 @@
             </div>
             <div class="col-lg-3 m-auto mb-0 ">
                 <div class="card m-auto mb-0">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <!--<img src="images/screening-camps/screening-camps-banner-prashanti-cancer-care-mission.png"
+                        class="card-img-top p-3 pb-0" alt="card-group-image">-->
+
+                    <div id="carouselWithIndicators2" class="carousel slide"
+                        class="card-img-top p-3 pb-0">
+                        <ol class="carousel-indicators custom-indicators">
+                            <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/screening-camps/MicrosoftTeams-image (53).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/screening-camps/MicrosoftTeams-image (41).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/screening-camps/MicrosoftTeams-image (42).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/screening-camps/MicrosoftTeams-image (45).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/screening-camps/MicrosoftTeams-image (47).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithIndicators2" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithIndicators2" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span></a>
+                    </div>
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Screening camps</h5>
 
@@ -160,7 +318,49 @@
             </div>
             <div class="col-lg-3 m-auto mb-0">
                 <div class="card m-auto mb-0">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <!--<img src="images/events/events-banner-prashanti-cancer-care-mission.png"
+                        class="card-img-top p-3 pb-0" alt="card-group-image">-->
+                    <div id="carouselWithIndicators3" class="carousel slide"
+                        class="card-img-top p-3 pb-0">
+                        <ol class="carousel-indicators custom-indicators">
+                            <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/events/118a2f3a-2799-453d-9c89-5fbcb607c2b0.jpg" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/events/2cfd37f1-59d7-4c6e-a7e7-35eeb60c5aa1.png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/events/3fe33066-c9e2-4590-805c-57038048b889.jfif" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/events/b174d427-3c61-49be-9188-27782122f217.jfif" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/events/c9d31cb5-d240-4f54-ad9c-b8b4b608d997.jfif" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithIndicators3" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithIndicators3" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span></a>
+                    </div>
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Support group events</h5>
 
@@ -171,7 +371,49 @@
         <div class="container work-section p-0 ps-0 pe-0 mt-0 d-flex flex-row">
             <div class="col-lg-3 m-auto mb-3">
                 <div class="card m-auto">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <!--<img src="images/counselling/counselling-banner-prashanti-cancer-care-mission.png"
+                        class="card-img-top p-3 pb-0" alt="card-group-image">-->
+                    <div id="carouselWithIndicators4" class="carousel slide"
+                        class="card-img-top p-3 pb-0">
+                        <ol class="carousel-indicators custom-indicators">
+                            <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/counselling/counselling-banner-prashanti-cancer-care-mission.png"
+                                    alt="" class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/counselling/MicrosoftTeams-image (41).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/counselling/MicrosoftTeams-image (46).png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/counselling/Picture3.png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/counselling/Screenshot 2023-09-18 153347.png" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithIndicators4" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithIndicators4" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span></a>
+                    </div>
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Counselling</h5>
 
@@ -180,7 +422,45 @@
             </div>
             <div class="col-lg-3 m-auto mb-3">
                 <div class="card m-auto">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <!--<img src="images/food-banks/food-banks-banner-prashanti-cancer-care-mission.png"
+                        class="card-img-top p-3 pb-0" alt="card-group-image">-->
+                    <div id="carouselWithIndicators5" class="carousel slide"
+                        class="card-img-top p-3 pb-0">
+                        <ol class="carousel-indicators custom-indicators">
+                            <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="2"></li>
+                            <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="3"></li>
+                            <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/food-banks/food1 (1).jpg" alt=""
+                                    class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/food-banks/food1.jpg" alt="" class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/food-banks/food3.jpg" alt="" class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/food-banks/food4.jpg" alt="" class="d-block w-100 p-3  image-height">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/food-banks/food5.jpg" alt="" class="d-block w-100 p-3  image-height">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithIndicators5" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithIndicators5" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span></a>
+                    </div>
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Food banks</h5>
 
@@ -189,7 +469,8 @@
             </div>
             <div class="col-lg-3 m-auto mb-3">
                 <div class="card m-auto">
-                    <img src="images/1.png" class="card-img-top p-3 pb-0" alt="card-group-image">
+                    <img src="images/lymphodema-clinic/lymphodema-clinic-banner-prashanti-cancer-care-mission.png"
+                        class=" p-3 pb-0" alt="card-group-image" height="27px">
                     <div class="card-body text-center bg-white">
                         <h5 class="card-title p-3">Lymphodema clinic</h5>
 
@@ -261,6 +542,26 @@
     </div>
 
     <!-------------------------------------------//pccm-statistics//----------------------------------------------->
+
+    <!-------------------------------------------events-section----------------------------------------------------->
+    <div class="container-fluid m-auto p-5">
+
+        <div class="col-lg-6 m-auto">
+            <nav class="nav nav-tabs col-lg-8" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Upcoming</a>
+                <a class="nav-link ps-5 ms-4" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Completed</a>
+            </nav>
+            <div class="tab-content mt-1" id="nav-tabContent pe-5">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!-------------------------------------------testimonial-section----------------------------------------------->
 
     <div class="container heading1 testimonial-heading col-lg-5 ps-5 pe-5 mt-5 pt-0">
@@ -270,44 +571,152 @@
     </div>
     <div class="container-fluid tests-section p-5 pt-3 pb-0 d-flex flex-row align-items-center justify-content-center">
         <div class="col-lg-3 testimonial1">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/CBUNY9CPuSY?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3   testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/n_bEnzn0bzk?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3  testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/i_ag8OJ4ElY?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3    testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/6CHC4xq0OU4?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </div>
     <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
         <div class="col-lg-3 testimonial1">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/hgppEoNXfow?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3   testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/xZFRdq5TYsM?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3  testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/DNjdhzOswaY?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3    testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/xqKzj_vkeME?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </div>
     <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
         <div class="col-lg-3 testimonial1">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/1FZ2eODhElg?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3   testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/xE1zSpgHRy4?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3  testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/IKVQM7m6GP0?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3    testimonial">
-            <img src="images/youtube.png" alt="Play Button" class="play-button">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/2EIeRbbqUrc?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/jipFgSVKkS0?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/piEyRXSF-is?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/8o4ADAJ5W1s?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/3K_n4MUtiSM?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/f7MhZ-6fCfo?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/piEyRXSF-is?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/sONAwE48OzI?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3 testimonial1">
+            <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
+            <iframe src="https://www.youtube-nocookie.com/embed/kBkv3rcqTEw?si=MyQyiSliT2ObK2hl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </div>
     <div class="container mt-4">
