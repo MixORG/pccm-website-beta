@@ -30,16 +30,16 @@
             font-style: normal;
         }
 
-        .carousel-item img {
+
+        .work-section .carousel-item img {
             height: 450px;
-            object-fit: fill;
+            object-fit: cover;
         }
 
         .tab-content .tab-pane {
             background-color: #083D77;
             height: 300px;
             width: 637px;
-            margin-right: 130px;
         }
 
         .nav-tabs .nav-item.show .nav-link,
@@ -86,6 +86,131 @@
         .carousel-control-next {
             margin: 0 10px;
             /* Adjust the value as needed */
+        }
+
+
+        .testimonial1 iframe {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 1290px) {
+            .tab-content .tab-pane {
+                background-color: #083D77;
+                height: 300px;
+                width: 637px;
+                margin-right: 100px;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link {
+                font-size: 20px;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link.active {
+                font-size: 20px;
+                padding-left: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link {
+                font-size: 16px;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link.active {
+                font-size: 16px;
+                padding-left: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 1050px) {
+            .tab-content .tab-pane {
+                background-color: #083D77;
+                height: 300px;
+                width: 437px;
+            }
+
+            .contact-heading {
+                color: #fff;
+                background-color: #F385AA;
+                width: 40%;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            .contact-heading1 {
+                color: #fff;
+                background-color: #F385AA;
+                width: 78%;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            .contact-heading2 {
+                color: #fff;
+                background-color: #F385AA;
+                width: 63%;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: 900;
+
+            }
+
+            .contact-heading3 {
+                color: #fff;
+                background-color: #F385AA;
+                width: 96%;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 1050px) {
+            .footer-section1 {
+                background-color: #083D77;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link {
+                font-size: 13px;
+            }
+
+            .nav-tabs .nav-item.show .nav-link,
+            .nav-tabs .nav-link.active {
+                font-size: 13px;
+                padding-left: 40px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .footer-section1 {
+                background-color: #083D77;
+                color: #fff;
+                font-size: 10px;
+            }
+
+            .footer-section1 .link-para {
+                background-color: #083D77;
+                color: #fff;
+                font-size: 10px;
+            }
+
+            .footer-section1 .link-para1 {
+                padding: 5px;
+            }
         }
     </style>
 </head>
@@ -154,7 +279,7 @@
     <!-----------------------------------------//aboutus//----------------------------------------------->
     <div class="container-fluid p-0 mb-3 mt-3">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -164,10 +289,10 @@
                             <img src="images/home/slider/slide-2.jpg" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/home/slider/pccm--banner-2.png" class="d-block w-100" alt="Slide 1">
+                            <img src="images/PCCM-slider-1.jpg" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/home/slider/pccm-banner-1.png" class="d-block w-100" alt="Slide 1">
+                            <img src="images/pccm-slider-2.jpg" class="d-block w-100" alt="Slide 1">
                         </div>
 
                     </div>
@@ -181,7 +306,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 p-3 about-section">
+            <div class="col-lg-6 p-3 col-md-12 col-sm-12  about-section">
                 <div class="ps-2">
                     <!----<h1 class="about-heading">Heading defining PCCM</h1>-->
                     <h1 class="about-heading">Empowering breast health through
@@ -216,14 +341,14 @@
                 <!--<p class="about-para1 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut. Lorem Ipsum is simply dummy text of the printing
                     and typesetting industry.</p>-->
-                    <p class="about-para1 mt-4">PCCM’s vision is to eradicate the barriers to quality
-                        healthcare, especially for underprivileged breast
-                        cancer patients, by providing free and affordable
-                        treatments and rehabilitation. PCCM aspires to
-                        lead the way in breast cancer education, training,
-                        and research, fostering a society that is well-
-                        informed, empowered, and capable of effectively
-                        combating breast cancer.</p>
+                <p class="about-para1 mt-4">PCCM’s vision is to eradicate the barriers to quality
+                    healthcare, especially for underprivileged breast
+                    cancer patients, by providing free and affordable
+                    treatments and rehabilitation. PCCM aspires to
+                    lead the way in breast cancer education, training,
+                    and research, fostering a society that is well-
+                    informed, empowered, and capable of effectively
+                    combating breast cancer.</p>
                 <div class="btn btn-success" style="font-weight: 400;">KNOW MORE</div>
             </div>
 
@@ -237,7 +362,7 @@
     <!--------------------------------------------------//heading-section//------------------------------------>
     <div class="container-fluid work-section p-0 m-0">
         <div class="container work-section p-5 ps-0 pe-0 d-flex flex-row">
-            <div class="col-lg-3 m-auto mb-0">
+            <div class="col-lg-3 col-md-4 col-sm-4 m-auto mb-0">
                 <div class="card m-auto mb-0">
                     <!--<img src="images/awareness-talks/awareness-talks-banner-prashanti-cancer-care-mission.png"
                         class="card-img-top p-3 pb-0" alt="card-group-image">-->
@@ -282,7 +407,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 m-auto mb-0 ">
+            <div class="col-lg-3 m-auto mb-0 col-md-4 col-sm-4">
                 <div class="card m-auto mb-0">
                     <!--<img src="images/screening-camps/screening-camps-banner-prashanti-cancer-care-mission.png"
                         class="card-img-top p-3 pb-0" alt="card-group-image">-->
@@ -333,7 +458,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 m-auto mb-0">
+            <div class="col-lg-3 m-auto mb-0 col-md-4 col-sm-4">
                 <div class="card m-auto mb-0">
                     <!--<img src="images/events/events-banner-prashanti-cancer-care-mission.png"
                         class="card-img-top p-3 pb-0" alt="card-group-image">-->
@@ -385,7 +510,7 @@
             </div>
         </div>
         <div class="container work-section p-0 ps-0 pe-0 mt-0 d-flex flex-row">
-            <div class="col-lg-3 m-auto mb-3">
+            <div class="col-lg-3 m-auto mb-3 col-md-4 col-sm-4">
                 <div class="card m-auto">
                     <!--<img src="images/counselling/counselling-banner-prashanti-cancer-care-mission.png"
                         class="card-img-top p-3 pb-0" alt="card-group-image">-->
@@ -435,7 +560,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 m-auto mb-3">
+            <div class="col-lg-3 m-auto mb-3 col-md-4 col-sm-4">
                 <div class="card m-auto">
                     <!--<img src="images/food-banks/food-banks-banner-prashanti-cancer-care-mission.png"
                         class="card-img-top p-3 pb-0" alt="card-group-image">-->
@@ -481,7 +606,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 m-auto mb-3">
+            <!--<div class="col-lg-3 m-auto mb-3 col-md-4 col-sm-4">
                 <div class="card m-auto">
                     <img src="images/lymphodema-clinic/lymphodema-clinic-banner-prashanti-cancer-care-mission.png"
                         class=" p-3 pb-0" alt="card-group-image" height="27px">
@@ -491,6 +616,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>-->
         </div>
     </div>
     <!-------------------------------------------//our-work//----------------------------------------------->
@@ -502,11 +629,11 @@
         <div class="after-line"></div>
     </div>
 
-    <div
+    <!-------- <div
         class="container-fluid stats-section d-flex flex-row align-items-center justify-content-center p-0 m-auto mb-0">
         <div class="col m-auto ">
             <div class="card m-auto bg-white">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/community awareness talks.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center pb-0">
                     <h2 class="card-title">16000+ </h2>
                     <p class="card-text  pb-0">Community Awareness Talks </p>
@@ -515,7 +642,7 @@
         </div>
         <div class="col m-auto ">
             <div class="card m-auto bg-white">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/community screening.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center ">
                     <h2 class="card-title">30,000+</h2>
                     <p class="card-text">Community Screening</p>
@@ -524,7 +651,7 @@
         </div>
         <div class="col m-auto ">
             <div class="card  m-auto bg-white">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/patient treated.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center ">
                     <h2 class="card-title">50000+ </h2>
                     <p class="card-text">Patient treated </p>
@@ -533,7 +660,7 @@
         </div>
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/Oncoplastic surgery.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">2000+ </h2>
                     <p class="card-text">Oncoplastic surgeries</p>
@@ -542,7 +669,7 @@
         </div>
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/herecptine fund.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">150+</h2>
                     <p class="card-text">Herceptin fund beneficiaries</p>
@@ -556,7 +683,7 @@
 
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/pateint counselled.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">10000+</h2>
                     <p class="card-text">Patient Counselled</p>
@@ -565,7 +692,7 @@
         </div>
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/support group member.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">5000+</h2>
                     <p class="card-text">Support group Members</p>
@@ -574,7 +701,7 @@
         </div>
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/food bank beneficiaries.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">6500+</h2>
                     <p class="card-text">Food bank beneficiaries</p>
@@ -583,7 +710,7 @@
         </div>
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/publications.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">35+</h2>
                     <p class="card-text">Publications</p>
@@ -593,7 +720,7 @@
 
         <div class="col">
             <div class="card m-auto p-3">
-                <img src="images/camp.png" class="card-img-top" alt="card-group-image">
+                <img src="images/icons/surgeon.png" class="card-img-top" alt="card-group-image">
                 <div class="card-body  text-center bg-white">
                     <h2 class="card-title">1500 +</h2>
                     <p class="card-text">Surgeon’s trained</p>
@@ -602,14 +729,115 @@
         </div>
     </div>
 
+-->
 
+    <div
+        class="container-fluid stats-section row d-flex flex-wrap align-items-center justify-content-center p-0 m-auto mb-0">
+        <!-- First Row -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto bg-white">
+                <img src="images/icons/community awareness talks.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center pb-0">
+                    <h2 class="card-title">16000+ </h2>
+                    <p class="card-text pb-0">Community Awareness Talks </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto bg-white">
+                <img src="images/icons/community screening.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center">
+                    <h2 class="card-title">30,000+</h2>
+                    <p class="card-text">Community Screening</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto bg-white">
+                <img src="images/icons/patient treated.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center">
+                    <h2 class="card-title">50000+ </h2>
+                    <p class="card-text">Patient treated </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/Oncoplastic surgery.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">2000+ </h2>
+                    <p class="card-text">Oncoplastic surgeries</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/herecptine fund.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">150+</h2>
+                    <p class="card-text">Herceptin fund beneficiaries</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/pateint counselled.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">10000+</h2>
+                    <p class="card-text">Patient Counselled</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Row -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/support group member.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">5000+</h2>
+                    <p class="card-text">Support group Members</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/food bank beneficiaries.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">6500+</h2>
+                    <p class="card-text">Food bank beneficiaries</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/publications.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">35+</h2>
+                    <p class="card-text">Publications</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Row -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card m-auto p-3">
+                <img src="images/icons/surgeon.png" class="card-img-top" alt="card-group-image">
+                <div class="card-body text-center bg-white">
+                    <h2 class="card-title">1500 +</h2>
+                    <p class="card-text">Surgeon’s trained</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-------------------------------------------//pccm-statistics//----------------------------------------------->
 
     <!-------------------------------------------events-section----------------------------------------------------->
     <div class="container-fluid m-auto p-5">
 
         <div class="col-lg-6 m-auto">
-            <nav class="nav nav-tabs col-lg-8" id="nav-tab" role="tablist">
+            <nav class="nav nav-tabs col-lg-8 col-md-6 col-sm-6" id="nav-tab" role="tablist">
                 <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab"
                     aria-controls="nav-home" aria-selected="true">Upcoming</a>
                 <a class="nav-link ps-5 ms-4" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab"
@@ -631,8 +859,8 @@
         <h2>Testimonials</h2>
         <div class="after-line"></div>
     </div>
-    <div class="container-fluid tests-section p-5 pt-3 pb-0 d-flex flex-row align-items-center justify-content-center">
-        <div class="col-lg-3 testimonial1">
+    <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
+        <div class="col-lg-3 col-xl-3 testimonial1">
             <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
             <iframe src="https://www.youtube-nocookie.com/embed/CBUNY9CPuSY?si=MyQyiSliT2ObK2hl"
                 title="YouTube video player" frameborder="0"
@@ -653,7 +881,7 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>
-        <div class="col-lg-3 testimonial1">
+        <div class=" col-lg-3 testimonial1">
             <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
             <iframe src="https://www.youtube-nocookie.com/embed/6CHC4xq0OU4?si=MyQyiSliT2ObK2hl"
                 title="YouTube video player" frameborder="0"
@@ -661,7 +889,7 @@
                 allowfullscreen></iframe>
         </div>
     </div>
-    <div class="container-fluid tests-section p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
+    <div class="container-fluid tests-section  p-5 pb-0 d-flex flex-row align-items-center justify-content-center">
         <div class="col-lg-3 testimonial1">
             <!-- <img src="images/youtube.png" alt="Play Button" class="play-button"> -->
             <iframe src="https://www.youtube-nocookie.com/embed/hgppEoNXfow?si=MyQyiSliT2ObK2hl"
@@ -857,7 +1085,7 @@
                         <div class="col-lg-2 contact-icon text-center pt-1"><img src="images/calling.png" alt="">
                         </div>
                         <div class="col-lg-10 contact-text">+91-20-25656110<br>
-                            91-20-25650269</div>
+                            +91-20-25650269</div>
                     </div>
                     <div class="d-flex flex-row flex-wrap pt-3">
                         <div class="col-lg-2 contact-icon text-center pt-2 pb-3"><img src="images/message.png" alt="">
@@ -874,8 +1102,7 @@
 
                     <div class="col-lg-2 contact-icon"><img src="images/facebook(1).png" alt=""></div>
                     <div class="col-lg-2 contact-icon"><img src="images/play.png" alt=""></div>
-                    <div class="col-lg-2 contact-icon"><img src="images/twitter.png"
-                            alt="">
+                    <div class="col-lg-2 contact-icon"><img src="images/twitter.png" alt="">
                     </div>
                 </div>
             </div>
@@ -884,16 +1111,16 @@
     <div class="container-fluid footer-section1 p-3">
         <hr>
         <div class="d-flex flex-row ps-3 pe-3 justify-content-end align-content-end">
-            <div class="col-lg-5 pt-2">
+            <div class="col-lg-4 col-md-12 col-sm-12 pt-2">
                 2023 @ c Prashanti Cancer Care Mission
             </div>
-            <div class="col-lg-7 pt-2">
-                <div class="d-flex flex-row text-center">
-                    <div class="col-lg-2 flex-fill">Donate</div>
-                    <div class="col-lg-2 flex-fill">Privacy</div>
-                    <div class="col-lg-2 flex-fill">Contact</div>
-                    <div class="col-lg-2 flex-fill">Term of use</div>
-                    <div class="col-lg-3 flex-fill">Executive Board</div>
+            <div class="col-lg-8 col-md-12 col-sm-12 pt-2">
+                <div class="d-flex flex-row text-center link-para">
+                    <div class="col-lg-2 col-md-4 link-para1 col-sm-6 flex-fill">Donate</div>
+                    <div class="col-lg-2 col-md-4 link-para1 col-sm-6 flex-fill">Privacy</div>
+                    <div class="col-lg-2 col-md-4 link-para1 col-sm-6 flex-fill">Contact</div>
+                    <div class="col-lg-2 col-md-4 link-para1 col-sm-6 flex-fill">Term of use</div>
+                    <div class="col-lg-3 col-md-4  link-para1 col-sm-6 flex-fill">Executive Board</div>
                 </div>
             </div>
         </div>
