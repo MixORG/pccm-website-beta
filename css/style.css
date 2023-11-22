@@ -248,6 +248,8 @@ body {
 .stats-section {
     padding: 100px;
     padding-top: 30px;
+    padding-left: 000px !important;
+    padding-right: 0px !important;
 }
 
 .stats-section img {
@@ -257,7 +259,7 @@ body {
 }
 
 .stats-section .card {
-    width: 278.1px;
+    width: auto;
     height: 200.8px;
     --bs-card-border-color: none;
     --bs-card-border-radius: none;
@@ -564,9 +566,3 @@ hr{
       }
 
 }
-.about-heading {
-    color: #fff;
-    font-weight: 700;
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
-  }
