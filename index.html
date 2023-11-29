@@ -31,8 +31,8 @@
         }
 
 
-        .work-section .carousel-item img {
-            height: 450px;
+        .work-section img {
+            height: 300px;
             object-fit: cover;
         }
 
@@ -251,21 +251,30 @@
             <div class="container-fluid col-lg-12 p-0 m-0 text-center mb-4 mt-1">
                 <a href="#" class="navbar-brand"><img src="images/PCCM logo.png" alt=""></a>
             </div>
-            <div class="container-fluid col-lg-12  p-0 m-0">
-                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarBasic">
+            <div class="container-fluid col-lg-12 p-0 m-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic">
                     <span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse show p-0" id="navbarBasic">
-                    <ul class="navbar-nav w-100   mb-xl-0 p-0">
-                        <li class="nav-item m-auto">
-                            <a href="our_work.html" class="nav-link active">ABOUT US</a>
-                        </li>
-                        <li class="nav-item m-auto">
+                    <ul class="navbar-nav w-100  mb-xl-0 p-0">
+
+                        <li class="nav-item m-auto dropdown">
+                            <a href="#" class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" 
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Work</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="community.html">Community Awareness and Screening camps</a>
+                              <a class="dropdown-item" href="freeships.html">Freeships in Breast Cancer treatment</a>
+                              <a class="dropdown-item" href="support_groups.html">Support group events and Food banks</a>
+                              <a class="dropdown-item" href="research_surgical.html">Research and Surgical training</a>
+                              <a class="dropdown-item" href="shared_decissions.html">Shared decision making and Surgeries</a>
+                              <a class="dropdown-item" href="genetic.html">Genetic clinic and Patient counseling</a>
+                            </div>
+                          </li>
+                          <li class="nav-item m-auto">
                             <a href="awareness_&_screening.html" class="nav-link">AWARENESS & SCREENING</a>
-                        </li>
-                        <li class="nav-item m-auto">
+                          </li>
+                          <li class="nav-item m-auto">
                             <a href="events_&_activities.html" class="nav-link">EVENTS & ACTIVITIES</a>
-                        </li>
+                          </li>
                         <li class="nav-item m-auto">
                             <a href="orchids_breast_health.html" class="nav-link">ORCHIDS BREAST HEALTH</a>
                         </li>
@@ -273,13 +282,13 @@
                             <a href="research.html" class="nav-link">RESEARCH</a>
                         </li>
                         <li class="nav-item m-auto">
-                            <a href="#" class="nav-link">TRAINING</a>
+                            <a href="training.html" class="nav-link">TRAINING</a>
                         </li>
                         <li class="nav-item m-auto">
-                            <a href="#" class="nav-link">TESTIMONIALS</a>
+                            <a href="testimonials.html" class="nav-link">TESTIMONIALS</a>
                         </li>
                         <li class="nav-item m-auto">
-                            <a href="#" class="nav-link">NEWSLETTER</a>
+                            <a href="newsletter.html" class="nav-link">NEWSLETTER</a>
                         </li>
                         <li class="nav-item m-auto pe-4 ps-1">
                             <a href="donation.html" class="nav-link btn btn-success donate-btn">DONATE</a>
@@ -363,23 +372,23 @@
         </div>
     </div>-->
     <div class="container-fluid col-lg-12  p-0 mb-3 mt-3">
-        <div class="row col-lg-12">
+        <div class="row col-lg-12 d-flex">
 
             <!-- Carousel Section -->
             <div class="col-lg-8 col-md-12 col-sm-12">
                 <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/home/slider/slide-1.jpg" class="d-block w-100" height="450px"  alt="Slide 1">
+                            <img src="images/home/slider/slide-1.jpg" class="d-block w-100" alt="Slide 1">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/home/slider/slide-2.jpg" class="d-block w-100" height="450px" alt="Slide 2">
+                            <img src="images/home/slider/slide-2.jpg" class="d-block w-100" alt="Slide 2">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/PCCM-slider-1.jpg" class="d-block w-100" height="450px" alt="Slide 3">
+                            <img src="images/PCCM-slider-1.jpg" class="d-block w-100" alt="Slide 3">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/pccm-slider-2.jpg" class="d-block w-100" height="450px" alt="Slide 4">
+                            <img src="images/pccm-slider-2.jpg" class="d-block w-100" alt="Slide 4">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
@@ -396,7 +405,7 @@
             <!-- About Section -->
             <div class="col-lg-4  col-md-12 col-sm-12 about-section">
                 <div class="ps-2">
-                    <h1 class="about-heading">Empowering breast health through compassionate care</h1>
+                    <h1 class="about-heading pt-1">Empowering breast health through compassionate care</h1>
                     <p class="text-white about-para">PCCM is a prominent NGO based in Pune, Maharashtra, founded by the
                         esteemed Dr. C. B Koppiker, a globally recognized Breast Oncologist. The main objective of this
                         NGO is to provide free and affordable breast cancer treatments and rehabilitation to
@@ -404,12 +413,22 @@
                         education, training, and research. Through its multi-pronged activities, viz. Clinical,
                         Academics, Research, and Support Activities, PCCM has been able to serve thousands of patients
                         annually in and around Pune city.</p>
-                    <div class="btn btn-success mt-4 ps-4 pe-4 mb-3">DONATE</div>
+                    <div class="btn btn-success mt-2 ps-4 pe-4 mb-3">DONATE</div>
                 </div>
             </div>
 
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
     <div class="container-fluid about-section2 d-flex flex-row col-lg-11 m-auto mt-5 ">
         <div class="col-lg-7 p-4 pe-0 pt-3">
             <div class="ps-2 ">
@@ -443,9 +462,9 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/3.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image ">
-                    <!----    <div id="carouselWithIndicators1" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <img src="thumbnail_images/3.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image ">
+                        <!----    <div id="carouselWithIndicators1" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="0" class="active"></li>
                                 <li data-bs-target="#carouselWithIndicators1" data-bs-slide-to="1"></li>
@@ -492,10 +511,10 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/2.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image">
+                        <img src="thumbnail_images/2.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image">
 
-                    <!----   <div id="carouselWithIndicators2" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <!----   <div id="carouselWithIndicators2" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="0" class="active"></li>
                                 <li data-bs-target="#carouselWithIndicators2" data-bs-slide-to="1"></li>
@@ -542,9 +561,9 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/6.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image">
-                    <!----    <div id="carouselWithIndicators3" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <img src="thumbnail_images/6.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image">
+                        <!----    <div id="carouselWithIndicators3" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="0" class="active"></li>
                                 <li data-bs-target="#carouselWithIndicators3" data-bs-slide-to="1"></li>
@@ -591,9 +610,9 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/1.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image">
-                    <!----    <div id="carouselWithIndicators4" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <img src="thumbnail_images/1.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image">
+                        <!----    <div id="carouselWithIndicators4" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators4" data-bs-slide-to="0" class="active">
                                 </li>
@@ -642,9 +661,9 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/4.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image">
-                    <!----    <div id="carouselWithIndicators5" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <img src="thumbnail_images/4.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image">
+                        <!----    <div id="carouselWithIndicators5" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="0" class="active">
                                 </li>
@@ -693,9 +712,9 @@
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="thumbnail_images/5.png"
-                        class="card-img-top pb-0 d-block w-100 p-3" alt="card-group-image">
-                    <!----    <div id="carouselWithIndicators5" class="carousel slide" class="card-img-top p-3 pb-0">
+                        <img src="thumbnail_images/5.png" class="card-img-top pb-0 d-block w-100 p-3"
+                            alt="card-group-image">
+                        <!----    <div id="carouselWithIndicators5" class="carousel slide" class="card-img-top p-3 pb-0">
                             <ol class="carousel-indicators custom-indicators">
                                 <li data-bs-target="#carouselWithIndicators5" data-bs-slide-to="0" class="active">
                                 </li>

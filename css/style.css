@@ -116,7 +116,7 @@ body {
 .about-heading {
     color: #fff;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -168,7 +168,7 @@ body {
     --bs-btn-disabled-bg: #083D77;
     --bs-btn-disabled-border-color: #083D77;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 3px;
 }
 
@@ -458,13 +458,13 @@ hr{
 }
 
 .caro-heading {
-    font-size: 70px;
+    font-size: 30px;
     color: #F05B8D;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
 .caro-para {
-    font-size: 25px;
+    font-size: 18px;
     font-family: 'poppins';
     font-weight: 500;
     padding: 50px;
